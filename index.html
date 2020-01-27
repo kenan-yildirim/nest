@@ -1,248 +1,636 @@
 <!DOCTYPE html>
-<html>
-<title>Nest Learning Thermostat</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size: 16px;}
-img {margin-bottom: -8px;}
-.mySlides {display: none;}
-</style>
-<body class="w3-content w3-black" style="max-width:1500px;">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="nest, thermostat, nest thermostat, nest learning thermostat, saving thermostat, smart thermostat">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Google Nest Smart Thermostat">
+    <title>Google Nest Learning Thermostat</title>
 
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="window.location.href = 'https://amzn.to/38G3I9E';">Check Latest Price</button>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="nest-thermostat-1.png" alt="nest learning thermostat" style="min-width:500px" width=100%>
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:40%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Google Nest 3rd Generation Programmable Wi-Fi Learning Thermostat</h1>
-        <hr class="w3-opacity">
-        <p>Super simple installment: free of charge</p>
-        <p><button class="w3-button w3-block w3-green w3-round" onclick="window.location.href = 'https://amzn.to/38G3I9E';">Check Latest Price</button></p>
-      </div>
-    </div>
-  </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="nest-thermostat-2.png" alt="Image 2" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:40%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
-        <hr class="w3-opacity">
-        <p>Choose from thousands of features</p>
-        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-      </div>
-    </div>
-  </div>
-  <div class="mySlides w3-animate-opacity">
-    <img class="w3-image" src="/w3images/app4.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-        <h1 class="w3-xlarge">Smart Design</h1>
-        <hr class="w3-opacity">
-        <p>Customize photos as you go</p>
-        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
-      </div>
-    </div>
-  </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-</header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/google-nest-smart-thermostat-5.png" type="image/gif" sizes="16x16">
 
-<!-- The App Section -->
-<div class="w3-padding-64 w3-white">
-  <div class="w3-row-padding">
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>The App</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
-      <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Download Application
-      </button>
-      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
-        </button>
-        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Modal -->
-<div id="download" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content" style="padding:32px">
-    <div class="w3-container w3-white">
-      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-      <h2 class="w3-wide">DOWNLOAD</h2>
-      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
-    </div>
-  </div>
-</div>
-
-<!-- Clarity Section -->
-<div class="w3-padding-64 w3-light-grey">
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App" width="335" height="471">
-    </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>Clarity</b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
-      <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Features Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
-  <h1 class="w3-jumbo"><b>Features</b></h1>
-  <p>This app is just so lorem ipsum.</p>
-
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
-      <p>Fast</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
-      <p>Loved</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
-      <p>Clarity</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
-      <p>Power</p>
-    </div>
-  </div>
-
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-diamond w3-text-white w3-jumbo"></i>
-      <p>Sharp</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
-      <p>Cloud</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
-      <p>Global</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
-      <p>Storage</p>
-    </div>
-  </div>
+  </head>
   
-  <div class="w3-row" style="margin-top:64px">
-    <div class="w3-col s3">
-      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
-      <p>Safe</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-shield w3-text-orange w3-jumbo"></i>
-      <p>Stabile</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
-      <p>Connected</p>
-    </div>
-    <div class="w3-col s3">
-      <i class="fa fa-image w3-text-pink w3-jumbo"></i>
-      <p>HD</p>
-    </div>
-  </div>
-</div>
+  <body>
 
-<!-- Pricing Section -->
-<div class="w3-padding-64 w3-center w3-white">
-  <h1 class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>250</b> Photos</li>
-        <li class="w3-padding-16"><b>10</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Office hours</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 25</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
+    <!-- Header Section Start -->
+    <header id="home" class="hero-area-2">    
+      <div class="overlay"></div>
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Google Nest Learning Thermostat</a>  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#app-features">Features</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#screenshots">Variations</a>
+              </li>                            
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#testimonial">Reviews</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#download">Buy</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>  
+      <div class="container">      
+        <div class="row space-100">
+          <div class="col-lg-7 col-md-12 col-xs-12">
+            <div class="contents">
+              <h2 class="head-title">Google Nest Learning Thermostat<br> 3rd Generation Smart Thermostat</h2>
+              <p>Google Nest Learning Thermostat learns the temperatures you like and programs itself accordingly. Change the temperature from your phone, tablet or laptop. Save enery and save your money.</p>
+              <div class="header-button">
+                <a href="#app-features" class="btn btn-border-filled">Learn More</a>
+                <a href="https://amzn.to/36uFYnm" class="btn btn-border">Check Price</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="intro-img">
+              <img src="img/google-nest-thermostat-2.png" alt="">
+            </div>            
+          </div>
+        </div> 
+      </div>             
+    </header>
+    <!-- Header Section End --> 
+
+    <!-- features Section Start -->
+    <div id="app-features" class="section">
+      <div class="container">
+        <div class="section-header">   
+          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">features</p>       
+          <h2 class="section-title wow fadeIn" data-wow-delay="0.2s">Amazing Features</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <div class="content-left text-right">
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="lni-timer"></i>
+                </span>
+                <div class="text">
+                  <h4>Auto Schedule</h4>
+                  <p>Just turn it up and down. It learns the temperatures you like and creates a schedule for you.</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="lni-dashboard"></i>
+                </span>
+                <div class="text">
+                  <h4>Energy History</h4>
+                  <p>Check your phone to see how much energy you used and why.</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="lni-home"></i>
+                </span>
+                <div class="text">
+                  <h4>Home Away Assist</h4>
+                  <p>It automatically adjusts the temperature after you leave. So you don’t heat or cool an empty home.</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="lni-bulb"></i>
+                </span>
+                <div class="text">
+                  <h4>Farsight</h4>
+                  <p>When the Nest Learning Thermostat spots you across the room, it lights up beautifully to show you the time, temperature or weather.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <div class="show-box">
+              <img src="img/google-smart-learning-nest-thermostat.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <div class="content-right text-left">
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="lni-shield"></i>
+                </span>
+                <div class="text">
+                  <h4>Fast installation</h4>
+                  <p>Most people install Nest in 30 minutes or less.If you ever need help, call 24/7 support.</p>
+                </div>
+              </div>
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="lni-star-filled"></i>
+                </span>
+                <div class="text">
+                  <h4>Remote control</h4>
+                  <p>Change the temperature from anywhere using your phone, tablet or laptop.</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="lni-leaf"></i>
+                </span>
+                <div class="text">
+                  <h4>Nest Leaf</h4>
+                  <p>You’ll see the Leaf when you choose a temperature that saves energy. It guides you in the right direction.</p>
+                </div>
+              </div>
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="lni-cup"></i>
+                </span>
+                <div class="text">
+                  <h4>Better together</h4>
+                  <p>The Nest Thermostat works with Nest Protect. If Nest Protect detects dangerous carbon monoxide gas, it can tell the Nest Thermostat to turn off the furnace – a common source of CO leaks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>1000</b> Photos</li>
-        <li class="w3-padding-16"><b>50</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 99</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
+    <!-- features Section End -->
+
+    <!-- Start Video promo Section -->
+    <section class="video-promo section">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <div class="video-promo-content text-center">
+                <a href="https://youtu.be/4jp1axFycgQ" class="video-popup"><i class="lni-film-play"></i></a>
+                <h2 class="mt-3 wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Watch Nest Smart Thermostat Video</h2>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Video Promo Section -->
+
+    <!-- Features Section Start -->
+    <div id="features-two" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src="img/google-nest-learning-thermostat-1.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-wrapper wow fadeInRight" data-wow-delay="0.6s">
+              <div>
+                <p class="btn btn-subtitle">How Google Nest Smart Thermostat Works?</p>  
+                <h3>Nest Thermostat is Amazing!</h3>
+                <p>Google Nest is a smart thermostat that learns what temperatures you like, turns itself down when you’re away and connects to your phone. It has a big, sharp display. And it’s proven to help save energy. In independent studies, the Nest Thermostat saved an average of 10% to 12% on heating bills and 15% on cooling bills. We’ve estimated average savings of $131 to $145 a year. The Nest Learning Thermostat is the first thermostat to get ENERGY STAR certified. It learns what temperature you like and builds a schedule around yours. Since 2011, the Nest Thermostat has saved billions of kWh of energy in millions of homes worldwide.</p>
+ <!--               <a class="btn btn-rm" href="#">Read More <i class="lni-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-wrapper wow fadeInRight" data-wow-delay="0.9s">
+              <div>
+                <p class="btn btn-subtitle">Installation</p>  
+                <h3>Great Design, Easy Installation</h3>
+                <p>Google Nest Smart Thermostat has different color options that makes it easy to adapt every home design. Installation of Nest Learning Thermostat doesn't require to be handyman. Everything you need to know and the tools you use comes with the product box. Installation and setting up easy. Just follow the instructions.</p>
+<!--                 <a class="btn btn-rm" href="#">Read More <i class="lni-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="1.2s">
+              <img class="img-fluid" src="img/nest-thermostat-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <br>
-</div>
+    <!-- Features Section End -->   
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
-  <div class="w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+    <!-- Awesome Screens Section Start -->
+    <section id="screenshots" class="screens-shot section">
+      <div class="container">
+        <div class="section-header">   
+          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Variations</p>       
+          <h2 class="section-title">Google Nest 3rd Generation Smart Thermostat Color Options</h2>
+        </div>
+        <div class="row">
+          <div class="touch-slider owl-carousel">
+            <div class="item">
+              <div class="screenshot-thumb">
+                <img class="img-fluid" src="img/google-nest-learning-thermostat-1.png" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screenshot-thumb">
+                <img class="img-fluid" src="img/google-smart-learning-nest-thermostat.png" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screenshot-thumb">
+                <img class="img-fluid" src="img/google-nest-thermostat-3.png" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <div class="screenshot-thumb">
+                <img class="img-fluid" src="img/google-nest-smart-thermostat-4.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Awesome Screens Section End -->  
 
-<script>
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+    <!-- Team section Start -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-header">   
+          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Documentation</p>       
+          <h2 class="section-title">Useful Documentation About Google Nest Smart Thermostat</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team wow fadeInUp" data-wow-delay="0.2s">
+              <div class="team-thumb">
+                <a href="specifications.pdf"><img src="img/google-nest-thermostat-pdf1.png" alt=""></a>
+              </div>
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Product Specifications</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-thumb">
+                <a href="userguide.pdf"><img src="img/google-nest-thermostat-pdf2.png" alt=""></a>
+              </div>
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">User Guide</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team wow fadeInUp" data-wow-delay="0.4s">
+              <div class="team-thumb">
+                <a href="usermanual.pdf"><img src="img/google-nest-thermostat-pdf3.png" alt=""></a>
+              </div>
+              <div class="team-details">
+                <div class="team-inner">                  
+                  <h4 class="team-title">User Manual</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team section End -->
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+    <!-- Testimonial Section Start -->
+    <section id="testimonial" class="section">
+      <div class="container">
+        <div class="section-header">   
+          <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Reviews</p>       
+          <h2 class="section-title">Clients Who Loved Google Nest Thermostat</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <div id="testimonials" class="touch-slider owl-carousel">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/google-nest-thermostat-smile.png" width="20" alt="">
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">We have had our best thermostat for a little over a year now and I have to say we love it. I would give 10 stars if I could!!!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/google-nest-thermostat-smile.png" width="20" alt="">
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">I love my Nest, I would recommend it to everyone that comes into my house. So great that you can control your temp from anywhere in the world.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/google-nest-thermostat-smile.png" width="20" alt="">
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">For the first year or so, this thing was awesome. It had some interesting automatic temperature selection, but we loved the ease of use.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/google-nest-thermostat-smile.png" width="20" alt="">
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">Besides the power savings running your AC at home, what I like the most is the programable features that help keep my home cooler, since you can set different temp settings along the entire day avoiding high AC workload, specially when you get to your furnace alike home in summer days.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="author">
+                    <div class="img-thumb">
+                      <img src="img/google-nest-thermostat-smile.png" width="20" alt="">
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <p class="description">Amazing thermostat. This NEST Learning Generation 3 thermostat surprises (in a good way) everyday. We are now in week 3 and are still discovering some of its capabilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->  
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+    <!-- Clients Section -->
+<!-- <div id="clients" class="section"> -->
+      <!-- Container Ends -->
+ <!--     <div class="container"> -->
+        <!-- Row and Scroller Wrapper Starts -->
+  <!--      <div class="row" id="clients-scroller">
+          <div class="client-item-wrapper">
+            <img src="img/clients/img1.png" alt="">
+          </div>
+          <div class="client-item-wrapper">
+            <img src="img/clients/img2.png" alt="">
+          </div>
+          <div class="client-item-wrapper">
+            <img src="img/clients/img3.png" alt="">
+          </div>
+          <div class="client-item-wrapper">
+            <img src="img/clients/img4.png" alt="">
+          </div>
+          <div class="client-item-wrapper">
+            <img src="img/clients/img5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Client Section End --> 
 
-</body>
+    <!-- Subcribe Section Start -->
+    <div id="subscribe" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-12 col-xs-12">
+            <div class="subscribe-form">
+              <div class="form-wrapper">
+                <div class="sub-title text-center">
+                  <a href="https://amzn.to/36uFYnm"><h3>Check Sale Price Now</h3></a>
+<!--                  <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p> -->
+                </div>
+                <form>
+                  <div class="row">
+                    <div class="col-12 form-line">
+                      <div class="form-group form-search">
+                <!--        <input type="email" class="form-control" name="email" placeholder="Enter Your Email"> -->
+                <!--        <button type="submit" class="btn btn-common btn-search">Subscribe</button> -->
+                      </div> 
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subcribe Section End -->
+
+    <!-- download Section Start -->
+    <section id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">            
+            <div class="download-thumb wow fadeInLeft" data-wow-delay="0.2s">
+              <img class="img-fluid" src="img/nest-learning-thermostat-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="download-wrapper wow fadeInRight" data-wow-delay="0.2s">
+              <div>
+                <a href="https://amzn.to/36uFYnm" class="btn btn-common btn-effect">Buy Now<br></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>
+  </br>
+</br>
+    </section>
+    <!-- download Section Start -->
+
+    <!-- Contact Section Start -->
+    <!--
+    <section id="contact">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="row justify-content-center"> 
+            <div class="offset-top">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="section-header">   
+                    <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Contact</p>       
+                    <h2 class="section-title">Love to Hear From You</h2>
+                  </div>
+                  <form id="contactForm">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                          <div class="help-block with-errors"></div>
+                        </div>                                 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                          <div class="help-block with-errors"></div>
+                        </div> 
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required="" data-error="Please enter your subject">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group"> 
+                          <textarea class="form-control" id="message" placeholder="Message" rows="7" data-error="Write your message" required></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="submit-button">
+                          <button class="btn btn-common btn-effect" id="submit" type="submit">Submit</button>
+                          <div id="msgSubmit" class="h3 hidden"></div> 
+                          <div class="clearfix"></div> 
+                        </div>
+                      </div>
+                    </div>            
+                  </form>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>        
+    </section> -->
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section class="footer-Content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <img src="img/logo.png" alt="">
+              <div class="textwidget">
+                <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p>
+              </div>
+            </div>
+ <!--           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Create a Free Account</h3>
+                <ul class="menu">
+                  <li><a href="#">Sign In</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Resource</h3>
+                <ul class="menu">
+                  <li><a href="#">Comunnity</a></li>
+                  <li><a href="#">Become a Partner</a></li>
+                  <li><a href="#">Our Technology</a></li>
+                  <li><a href="#">Documentation</a></li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Support</h3>
+                <ul class="menu">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#app-features">Features</a></li>
+                  <li><a href="#screenshots">Variations</a></li>
+                  <li><a href="#testimonial">Reviews</a></li>
+                  <li><a href="#download">Buy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright Start  -->
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="site-info float-left">
+<!--                  <p>&copy; 2020 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p> -->
+                </div>              
+                <div class="float-right">  
+                  <ul class="footer-social">
+                    <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+                    <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Copyright End -->
+      </section>
+      <!-- Footer area End -->
+      
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a> 
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script> 
+    <script src="js/jquery.mixitup.js"></script>       
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/wow.js"></script>   
+    <script src="js/jquery.counterup.min.js"></script>     
+    <script src="js/nivo-lightbox.js"></script>     
+    <script src="js/jquery.magnific-popup.min.js"></script>     
+    <script src="js/waypoints.min.js"></script>      
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+    
+  </body>
 </html>
