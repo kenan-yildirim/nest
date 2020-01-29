@@ -36,7 +36,7 @@ Domain Path:      /languages/
    ========================================================================== */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #a0a6ad;
+  color: black;
   font-size: 14px;
   font-weight: 400;
   background: #fff;
@@ -49,7 +49,7 @@ html {
 
 p {
   font-size: 14px;
-  color: #a0a6ad;
+  color: black;
   line-height: 26px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -139,7 +139,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
    ========================================================================== */
 .btn {
   font-size: 14px;
-  padding: 10px 30px;
+  padding: 15px 45px;
   border-radius: 30px;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
@@ -161,9 +161,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .btn-common {
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  /* background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%); 
   background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%); */
+  background-color: #FB8A32;
   position: relative;
   z-index: 1;
 }
@@ -1025,7 +1026,7 @@ button:focus {
 
 #features .nav .nav-item .nav-link {
   font-size: 20px;
-  color: #a0a6ad;
+  color: black;
   padding: 30px 0;
   line-height: 1;
   -webkit-transition: color 0.2s;
@@ -1392,7 +1393,7 @@ button:focus {
 }
 
 .testimonial-item .content-inner span {
-  color: #a0a6ad;
+  color: black;
 }
 
 .testimonial-item .content-inner .author-info {
@@ -1888,7 +1889,7 @@ button:focus {
 }
 
 #blog .author .name a {
-  color: #a0a6ad;
+  color: black;
   font-size: 14px;
   font-weight: 400;
 }
@@ -2362,4 +2363,34 @@ footer .menu li a:hover {
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+/*Footer*/
+
+.navbar1 {
+  overflow: hidden;
+  background-color: #FB8A32;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar1 a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar1 a.active {
+  background-color: #FB8A32;
+  color: white;
 }
